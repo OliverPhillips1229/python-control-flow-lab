@@ -142,6 +142,20 @@ calculate_dog_years()
 
 def weather_advice():
     # Your control flow logic goes here
+    cold = input('Is it cold? (yes/no): ').strip().lower()
+    raining = input('Is it raining? (yes/no): ').strip().lower()
+
+    is_cold = cold == 'yes'
+    is_raining = raining == 'yes'
+
+    if is_cold and is_raining:
+        print('Wear a waterproof coat.')
+    elif is_cold and not is_raining:
+        print('Wear a warm coat.')
+    elif not is_cold and is_raining:
+        print('Carry an umbrella.')
+    elif not is_cold and not is_raining:
+        print('Wear light clothing.')
 
 # Call the function
 weather_advice()
