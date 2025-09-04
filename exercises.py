@@ -39,7 +39,7 @@ print_greeting()
 def check_letter():
     vowel = ['a','e','i','o','u']
     # Your control flow logic goes here
-    letter = input('Enter a letter: ')
+    letter = input('Enter a letter: ').lower()
     if letter in vowel:
         print(f"The letter {letter} is a vowel.")
     else:
